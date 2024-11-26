@@ -10,7 +10,7 @@ body {
 
 .main_box {
   height: 800px;
-  background-image: url("exam.jpeg");
+  background-image: url("../images/exam.jpeg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;

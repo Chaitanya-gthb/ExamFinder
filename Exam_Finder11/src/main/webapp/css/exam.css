@@ -87,7 +87,7 @@ a {
 .divv {
   display: flex;
   height: 750px;
-  background-image: url("sunrise-8235464.jpg");
+  background-image: url("../images/sunrise-8235464.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -152,7 +152,7 @@ a {
   position: relative;
   height: 800px;
   display: flex;
-  background-image: url("book.jpg");
+  background-image: url("../images/book.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
