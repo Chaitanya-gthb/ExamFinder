@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Sending Page</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <h1>Email Sending Page</h1>
+    <form id="email-form">
+      <label for="to">NAME:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="to">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <label for="message">Subject:</label>
+      <textarea id="sub" name="subject"></textarea><br /><br />
+      <label for="message">Message:</label>
+      <textarea id="msgg" name="msgg"></textarea><br /><br />
+      <input type="submit" value="Send Email" onclick="sendemail()">
+    </form>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "CUDC4ejRqdLUfEwwI",
+        });
+      })();
+    </script>
+    <script src="demo.js"></script>
+  </body>
+</html>

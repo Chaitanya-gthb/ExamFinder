@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Finder</title>
+    <link
+      rel="icon"
+      href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        position: absolute;
+        top: 0;
+        height: 80px;
+        width: 100%;
+        transition: 1.1s;
+      }
+
+      .navbar .head {
+        position: relative;
+        left: 60px;
+        color: white;
+        letter-spacing: 7px;
+      }
+
+      .navbar i {
+        position: relative;
+        left: 1400px;
+        font-size: 30px;
+        top: -55px;
+        color: white;
+      }
+      .container {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background: rgba(255,255,255,0.6);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-top: 100px;
+      }
+
+      .headingg{
+        text-align: center;
+        color: #333;
+      }
+
+      input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        outline: none;
+        border: none;
+      }
+      label {
+        font-size: 18px;
+        font-style: italic;
+        /* border: 1px dotted black; */
+      }
+      button {
+        margin-top: 20px;
+        width: 80%;
+        padding: 20px 0px;
+        background: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      button:hover {
+        opacity: 0.4;
+      }
+      hr{
+        border: 1px dashed grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="head">EXAMNET</h1>
+      <a href="index.html">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="container">
+      <hr />
+      <h1 class="headingg">Find Your Eligible Exams</h1>
+      <hr />
+      <form action="sendEmail.jsp" method="GET">
+        <br /><br /><br />
+        <label> ENTER NAME </label><br />
+        <input type="text" name="name" placeholder="Your Name" required /><br /><br>
+
+        <label>ENTER EMAIL</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        /><br /><br>
+
+        <label>ENTER EXAM CODE</label><br />
+        <input
+          type="number"
+          name="examCode"
+          placeholder="Exam Code"
+          required
+        /><br /><br>
+
+        <button type="submit">SEND REMINDER</button>
+      </form>
+    </div>
+  </body>
+</html>

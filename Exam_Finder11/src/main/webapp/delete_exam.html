@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Exam</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Exam</h1>
+        <p>Are you sure you want to delete the exam with code <strong>1001</strong>?</p>
+        <form action="DeleteExamServlet" method="post">
+            <input type="hidden" name="exam_code" value="1001">
+            <input type="submit" value="Delete">
+            <a href="view_exams.html" class="cancel-link">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

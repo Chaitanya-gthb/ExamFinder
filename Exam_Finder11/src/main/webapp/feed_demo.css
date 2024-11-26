@@ -1,0 +1,108 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    }
+    
+    .footer.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    
+    .footer.row {
+    margin-bottom: 20px;
+    }
+    
+    .footer.col-md-4 {
+    margin-bottom: 20px;
+    }
+    
+    .footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .footer li {
+    margin-bottom: 10px;
+    }
+    
+    .footer a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .footer a:hover {
+    color: #ccc;
+    }
+    
+    .social-media {
+    margin-top: 10px;
+    }
+    
+    .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    
+    .social-media i {
+    font-size: 20px;
+    color: #fff;
+    }
+    
+    .get-in-touch {
+    margin-top: 20px;
+    }
+    
+    .get-in-touch p {
+    margin-bottom: 10px;
+    }
+    
+    .subscribe {
+    margin-top: 20px;
+    }
+    
+    .subscribe form {
+    margin-top: 10px;
+    }
+    
+    .subscribe input[type="email"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .subscribe button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .subscribe button[type="submit"]:hover {
+    background-color: #3e8e41;
+    }
+    
+    .copyright {
+    margin-top: 20px;
+    text-align: center;
+    }
+    
+    .copyright p {
+    margin-bottom: 10px;
+    }

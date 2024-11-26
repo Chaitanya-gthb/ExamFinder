@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="main adminPage">
+      <div class="imgg">
+        <h1>Welcome To <br /><span>Examnet</span></h1>
+        <img src="sunrise-8235464.jpg" />
+      </div>
+      <div class="content">
+        <div class="login_box">
+        
+          <h1>Login As <span class="text1"></span></h1>
+          <button class="admin1">ADMIN</button>
+          <button class="user1">USER</button>
+          <p class="text3"></p>
+          <br />
+          <form action="admin_login.jsp" method="post">
+          <label>Username</label><br />
+          <input
+            type="text"
+            name="Username"
+            placeholder="Username.."
+            required
+          /><br /><br /><br />
+
+    <!--       <label>Email</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address.."
+            required
+          /><br /><br /><br />
+--> 
+          <label>Password</label><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="**********"
+            required
+          /><br />
+
+          <p class="info">
+            Don't have an account?
+            <a href="#" class="forgot-pass">Forgot Password?</a>
+          </p>
+          <a href="admin.html">
+            <button type="submit" class="btn" onclick=>Login</button>
+          </a>
+          </form>
+        </div>
+        <div class="forgotBlock">
+          <h1>Get a New Password</h1>
+          <br />
+          <form action="update.jsp" method="post">
+          <label>Email :</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email.."
+            required
+          /><br /><br /><br />
+
+          <label>New Password :</label><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="**********"
+            required
+          /><br /><br /><br />
+
+          <label>Confirm Password :</label><br />
+          <input
+            type="password"
+            name="repassword"
+            placeholder="**********"
+            required
+          /><br /><br />
+
+          <button type="submit" class="forSub">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main userPage">
+      <div class="imgg">
+        <h1>Welcome To <br /><span>Examnet</span></h1>
+        <img src="sunrise-8235464.jpg" />
+      </div>
+      <div class="content">
+        <div class="login_box2">
+          <h1>Login As <span class="text2"></span></h1>
+          <button class="admin2">ADMIN</button>
+          <button class="user2">USER</button>
+          <p class="text4"></p>
+          <br />
+		  <form action="login.jsp" method="post">
+          <label>Username</label><br />
+          <input
+            type="text"
+            name="Username"
+            placeholder="Username.."
+            required
+          /><br /><br /><br />
+
+          <label>Email</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address.."
+            required
+          /><br /><br /><br />
+
+          <label>Password</label><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="**********"
+            required
+          /><br />
+
+          <p>
+            Don't have an account?
+            <a href="#" class="forgot-pass2">Forgot Password?</a>
+          </p>
+
+          <button type="submit" class="btn" onclick=>Login</button>
+          </form>
+        </div>
+        <div class="forgotBlock2">
+          <h1>Get a New Password</h1>
+          <br />
+          <form action="update.jsp" method="post">
+          <label>Email :</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email.."
+            required
+          /><br /><br /><br />
+
+          <label>New Password :</label><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="**********"
+            required
+          /><br /><br /><br />
+
+          <label>Confirm Password :</label><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="**********"
+            required
+          /><br /><br />
+
+          <button type="submit" class="forSub2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

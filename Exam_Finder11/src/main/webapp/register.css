@@ -1,0 +1,274 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .imgg h1 {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  color: white;
+  filter: none;
+  font-size: 120px;
+  text-align: center;
+  transition: 0.9s;
+}
+
+.imgg {
+  position: absolute;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.imgg img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  width: 30%;
+  transition: 0.9s;
+}
+
+.content h1 {
+  position: relative;
+  left: 20px;
+}
+
+.content label {
+  position: relative;
+  left: 30px;
+  font-weight: bold;
+}
+
+.content input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid grey;
+  position: relative;
+  left: 30px;
+  margin-top: 4px;
+  width: 80%;
+  outline: none;
+  font-size: 16px;
+}
+
+.terms {
+  display: flex;
+}
+
+.content input[type="checkbox"] {
+  width: 10%;
+  position: relative;
+  left: -10px;
+  height: 20px;
+  margin: 0;
+}
+
+.logDirect p{
+	margin-left: 20px;
+	font-weight: bolder;
+}
+
+
+.terms p {
+  position: relative;
+  top: -14px;
+  right: 11px;
+  font-weight: normal;
+}
+
+.content button {
+  background: transparent;
+  width: 70%;
+  position: relative;
+  left: 65px;
+  height: 40px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  border: 4px outset black;
+  transition: 0.5s;
+
+  &:hover {
+    letter-spacing: 8px;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main .imgg h1 {
+    font-size: 100px;
+    left: 100px;
+    top: 150px;
+  }
+
+  .content {
+    width: 30%;
+    text-align: start;
+  }
+  .content h1 {
+    font-size: 24px;
+    left: 15px;
+  }
+
+  .content input {
+    width: 70%;
+    left: 22px;
+  }
+
+  .content label {
+    position: relative;
+    left: 22px;
+    font-weight: bold;
+  }
+  
+  .content button {
+    width: 80%;
+    left: 35px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .main .imgg h1 {
+    font-size: 70px;
+    left: 60px;
+    top: 200px;
+  }
+
+  .imgg {
+    width: 65%;
+    height: 100%;
+    /* display: none; */
+  }
+
+  .content {
+    width: 40%;
+    height: 100%;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    left: 10px;
+  }
+
+  .content input {
+    width: 60%;
+    left: 22px;
+  }
+
+  .content label {
+    position: relative;
+    left: 22px;
+    font-weight: bold;
+  }
+
+  .content button {
+    width: 60%;
+    left: 25px;
+    font-size: 16px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .main .imgg h1 {
+    font-size: 60px;
+    left: 100px;
+    top: 80px;
+  }
+
+  .imgg {
+    width: 50%;
+    height: 100%;
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    left: 10px;
+  }
+
+  .content input {
+    width: 60%;
+    left: 22px;
+  }
+
+  .content label {
+    position: relative;
+    left: 22px;
+    font-weight: bold;
+  }
+
+
+  .content button {
+    width: 60%;
+    left: 25px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .main .imgg h1 {
+    font-size: 40px;
+    left: 50px;
+    top: 60px;
+  }
+
+  .imgg {
+    width: 100%;
+    height: 40%;
+  }
+
+  .content {
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    left: 5px;
+  }
+
+  .content input {
+    width: 80%;
+    left: 5px;
+  }
+
+
+  .content button {
+    width: 70%;
+    left: 15px;
+    font-size: 14px;
+  }
+
+}

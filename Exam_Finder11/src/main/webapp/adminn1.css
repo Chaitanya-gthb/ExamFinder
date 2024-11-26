@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url("book.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container.con {
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 20px;
+  margin-top: 140px;
+  margin-bottom: 90px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.container img {
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  transition: 1.1s;
+}
+
+.navbar .head {
+  position: relative;
+  left: 60px;
+  color: white;
+  letter-spacing: 7px;
+}
+
+.navbar i {
+  position: relative;
+  left: 1400px;
+  font-size: 30px;
+  top: -55px;
+  color: white;
+}
+
+.ad {
+  margin-top: 0;
+  text-align: center;
+  color: black;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 230px;
+  margin-left: 44px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  border: none;
+  margin: 20px;
+  transition: 0.5s;
+  border-radius: 8px;
+
+  &:hover {
+    border-radius: 0px;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+}
+
+.formm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formm input,
+select {
+  margin-top: 5px;
+  padding: 10px 10px;
+  outline: none;
+  font-size: 16px;
+  width: 70%;
+}
+
+.formm label {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: light;
+  padding: 2px;
+  border: 1px dotted black;
+}
+
+.formm .btnnns {
+  background-color: black;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 14px;
+  padding: 20px 0px;
+  color: white;
+
+  &:hover {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}

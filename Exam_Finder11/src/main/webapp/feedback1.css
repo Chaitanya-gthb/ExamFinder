@@ -1,0 +1,266 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  background-image: url('https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar .head {
+  position: relative;
+  left: 60px;
+  color: white;
+  letter-spacing: 7px;
+}
+
+.navbar i {
+  position: relative;
+  left: 1400px;
+  font-size: 30px;
+  top: -55px;
+  color: white;
+}
+
+.container {
+  background: transparent;
+  border: 1px solid white;
+  padding: 30px;
+  max-width: 550px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.feedback-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.feedback-form p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.feedback-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.rating label {
+  font-size: 18px;
+  cursor: pointer;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  clip-path: polygon(
+      50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+      79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+      2% 35%, 39% 35%
+  ); /* Star shape */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: gold;
+}
+
+.feedback-form .submit-btn {
+  width: 90%;
+  padding: 10px;
+  background: transparent;
+  color: #fff;
+  border: 5px inset white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 5px;
+  position: relative;
+  left: 20px;
+}
+
+.feedback-form .submit-btn:hover {
+  letter-spacing: 8px;
+}
+
+.rating #result{
+	visibility: hidden;
+	position: absolute;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+  .navbar i {
+    left: 1100px; /* Adjust icon position */
+  }
+
+  .container {
+    max-width: 450px; /* Adjust container width */
+  }
+
+  .feedback-form .submit-btn {
+    left: 10px; /* Adjust button position */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar i {
+    left: 900px; /* Further adjust icon position */
+  }
+
+  .container {
+    max-width: 400px; /* Further adjust container width */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .head {
+    left: 30px; /* Adjust heading position */
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .navbar i {
+    left: 600px; /* Further adjust icon position */
+    font-size: 24px; /* Adjust icon size */
+    top: -50px; /* Adjust vertical position */
+  }
+
+  .container {
+    max-width: 350px; /* Further adjust container width */
+  }
+
+  .feedback-form .submit-btn {
+    width: 80%; /* Adjust button width */
+    left: 0px; /* Adjust button position */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .head {
+    left: 15px; /* Adjust heading position */
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .navbar i {
+    left: 300px; /* Further adjust icon position */
+    font-size: 20px; /* Adjust icon size */
+    top: -45px; /* Adjust vertical position */
+  }
+
+  .container {
+    max-width: 100%; /* Use full width */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .feedback-form h2 {
+    font-size: 22px; /* Adjust heading size */
+  }
+
+  .feedback-form p {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form textarea {
+    width: 100%; /* Full width for inputs */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .feedback-form .submit-btn {
+    width: 100%; /* Adjust button width */
+    left: 0px; /* Adjust button position */
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar .head {
+    font-size: 18px; /* Smaller font size */
+    left: 10px; /* Adjust heading position */
+  }
+
+  .navbar i {
+    left: 200px; /* Further adjust icon position */
+    font-size: 18px; /* Adjust icon size */
+    top: -40px; /* Adjust vertical position */
+  }
+
+  .feedback-form h2 {
+    font-size: 18px; /* Smaller heading */
+  }
+
+  .feedback-form p {
+    font-size: 14px; /* Smaller paragraph */
+  }
+
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form textarea {
+    font-size: 14px; /* Adjust input font size */
+  }
+
+  .feedback-form .submit-btn {
+    font-size: 18px; /* Smaller button font size */
+    letter-spacing: 3px; /* Adjust letter spacing */
+  }
+}

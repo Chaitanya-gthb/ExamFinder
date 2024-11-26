@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Exam</title>
+    <link rel="stylesheet" href="adminn1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="ad">Add Exam</h1>
+      <form class="formm" action="add_exam.jsp" method="post">
+        <label for="exam_name">Exam Name:</label>
+        <input
+          type="text"
+          id="exam_name"
+          name="exam_name"
+          placeholder="Enter Exam Name.."
+          required
+        />
+        <br /><br />
+
+        <label for="eligible_starting_age">Eligible Starting Age:</label>
+        <input
+          type="number"
+          id="eligible_starting_age"
+          name="eligible_starting_age"
+          placeholder="Enter Eligible Starting Age.."
+          required
+        />
+        <br /><br />
+
+        <label for="eligible_ending_age">Eligible Ending Age:</label>
+        <input
+          type="number"
+          id="eligible_ending_age"
+          name="eligible_ending_age"
+          placeholder="Enter Eligible Ending Age.."
+          required
+        />
+        <br /><br />
+
+        <label for="eligible_field">Eligible Field:</label>
+        <input
+          type="text"
+          id="eligible_field"
+          name="eligible_field"
+          placeholder="Enter Eligible Field.."
+          required
+        />
+        <br /><br />
+
+        <label for="application_start_date">Application Start Date:</label>
+        <input
+          type="date"
+          id="application_start_date"
+          name="application_start_date"
+          required
+        />
+        <br /><br />
+
+        <label for="application_end_date">Application End Date:</label>
+        <input
+          type="date"
+          id="application_end_date"
+          name="application_end_date"
+          required
+        />
+        <br /><br />
+
+        <label for="exam_type">Exam type:</label>
+        <input
+          type="text"
+          id="exam_type"
+          name="exam_type"
+          placeholder="Enter Exam type.."
+          required
+        />
+        <br /><br />
+
+        <label for="exam_fees">Exam fees:</label>
+        <input
+          type="number"
+          id="exam_fees"
+          name="exam_fees"
+          placeholder="Enter Exam fees.."
+          required
+        />
+        <br /><br />
+
+        <label for="exam_syllabus">Exam Syllabus:</label>
+        <input
+          type="text"
+          id="exam_syllabus"
+          name="exam_syllabus"
+          placeholder="Enter Exam Syllabus.."
+          required
+        />
+        <br /><br />
+
+        <label for="exam_date">Exam Date :</label>
+        <input
+          type="date"
+          id="exam_date"
+          name="exam_date"
+          placeholder="Enter Exam Date.."
+          required
+        />
+        <br /><br />
+
+        <label for="highest-qualification">Highest Qualification:</label>
+        <select
+          id="highest-qualification"
+          name="highest-qualification"
+          required
+        >
+          <option value="">--Select Qualification--</option>
+          <option value="10th Pass">10th Pass</option>
+          <option value="12th Pass">12th Pass</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Post Graduate">Post Graduate</option>
+        </select>
+
+        <br /><br />
+        <input type="submit" value="ADD EXAM" class="btnnns" />
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>

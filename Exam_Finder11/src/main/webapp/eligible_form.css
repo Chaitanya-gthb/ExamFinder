@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('sunrise-8235464.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar .head {
+    position: relative;
+    left: 60px;
+    color: white;
+    letter-spacing: 7px;
+}
+
+.navbar i {
+    position: relative;
+    left: 1400px;
+    font-size: 30px;
+    top: -55px;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 45px auto;
+    margin-top: 130px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.container h2 {
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 27px;
+    color: white;
+}
+
+.container h3 {
+    font-size: 22px;
+    letter-spacing: 6px;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+input, textarea, select {
+    width: 80%;
+    background-color: white;
+    color: black;
+    height: 30px;
+}
+
+button[type="submit"] {
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 5px outset white;
+    cursor: pointer;
+    width: 50%;
+    font-size: 22px;
+    letter-spacing: 6px;
+    transition: .9s;
+    position: relative;
+    left: 220px;
+    top: 12px;
+}
+
+button[type="submit"]:hover {
+    letter-spacing: 12px;
+    cursor: pointer;
+}
+
+.declaration {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.declaration input {
+    margin-right: 0;
+    width: fit-content;
+    margin: 0;
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
+
+.declaration p {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    left: 120px;
+}
+.container button{
+    margin-bottom: 40px;
+}
+label, input, textarea, select, p {
+    position: relative;
+    left: 75px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+    .navbar i {
+        left: 1000px; /* Adjust icon position */
+    }
+
+    .container {
+        max-width: 700px; /* Adjust container width */
+    }
+
+    button[type="submit"] {
+        left: 150px; /* Adjust button position */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar i {
+        left: 800px; /* Further adjust icon position */
+    }
+
+    .container {
+        max-width: 600px; /* Further adjust container width */
+    }
+
+    button[type="submit"] {
+        left: 120px; /* Further adjust button position */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .head {
+        left: 30px; /* Adjust heading position */
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .navbar i {
+        left: 600px; /* Further adjust icon position */
+        font-size: 24px; /* Adjust icon size */
+        top: -50px; /* Adjust vertical position */
+    }
+
+    .container {
+        max-width: 500px; /* Further adjust container width */
+    }
+
+    button[type="submit"] {
+        width: 60%; /* Adjust button width */
+        left: 80px; /* Adjust button position */
+    }
+
+    label, input, textarea, select, p {
+        left: 50px; /* Adjust positioning for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .head {
+        left: 15px; /* Adjust heading position */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .navbar i {
+        left: 300px; /* Further adjust icon position */
+        font-size: 20px; /* Adjust icon size */
+        top: -45px; /* Adjust vertical position */
+    }
+
+    .container {
+        max-width: 100%; /* Use full width */
+        margin: 20px; /* Adjust margin */
+        padding: 15px; /* Adjust padding */
+    }
+
+    button[type="submit"] {
+        width: 70%; /* Adjust button width */
+        left: 40px; /* Adjust button position */
+    }
+
+    label, input, textarea, select, p {
+        left: 20px; /* Further adjust positioning */
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar .head {
+        font-size: 18px; /* Smaller font size */
+        left: 10px; /* Adjust heading position */
+    }
+
+    .navbar i {
+        left: 200px; /* Further adjust icon position */
+        font-size: 18px; /* Adjust icon size */
+        top: -40px; /* Adjust vertical position */
+    }
+
+    button[type="submit"] {
+        width: 80%; /* Adjust button width */
+        left: 20px; /* Adjust button position */
+    }
+
+    label, input, textarea, select, p {
+        left: 10px; /* Further adjust positioning */
+        font-size: 18px; /* Adjust font size */
+    }
+}

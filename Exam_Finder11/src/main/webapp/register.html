@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+  <form action="regg.jsp" method="post">
+    <div class="main">
+      <div class="imgg">
+        <h1>Welcome To <br /><span>Examnet</span></h1>
+        <img src="sunrise-8235464.jpg" />
+      </div>
+      <div class="content">
+        <h1>Register Here..</h1>
+        <br /><br />
+        <label>Full Name</label><br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Name.."
+          required
+        /><br /><br /><br />
+
+        <label>Email</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address.."
+          required
+        /><br /><br /><br />
+
+        <label>Username</label><br />
+        <input
+          type="text"
+          name="Username"
+          placeholder="Username.."
+          required
+        /><br /><br /><br />
+
+        <label>Password</label><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="**********"
+          required
+        /><br /><br /><br />
+
+        <label>Repeat Password</label><br />
+        <input
+          type="password"
+          name="re_password"
+          placeholder="**********"
+          required
+        /><br /><br />
+        
+        <label class="terms logDirect">
+          <p>Already have an account <a href="login.html">LOGIN</a>.</p>
+        </label>
+
+        <label class="terms">
+          <input type="checkbox" name="checkbox" />
+          <p>I agree to the Terms of User.</p>
+        </label>
+
+        <button type="submit">Register</button>
+      </div>
+    </div>
+
+    <script src="register.js">
+    </script>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,1512 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 3000px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main_box {
+  height: 800px;
+  background-image: url("exam.jpeg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 80px;
+  width: 100%;
+  transition: 1.1s;
+}
+
+.logo {
+  position: relative;
+  left: -100px;
+  color: white;
+  letter-spacing: 7px;
+}
+
+.pipe {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 350px;
+  top: -10px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  left: -160px;
+  top: 14px;
+}
+
+.li {
+  margin-right: 30px;
+  font-weight: light;
+  font-size: 22px;
+  letter-spacing: 5px;
+  list-style-type: none;
+  color: white;
+  transition: 0.9s;
+}
+
+.navbar .li a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  letter-spacing: 7px;
+  color: white;
+  height: 50px;
+  position: relative;
+  top: 15px;
+  background: transparent;
+  font-weight: light;
+  font-size: 15px;
+  border: 1px outset white;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  font-size: 18px;
+}
+
+a i{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+	position: relative;
+  left: 100px;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+
+.register.btn i{
+	color: black;
+	font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  position: relative;
+  left: 200px;
+  top: 120px;
+  transition: 1.1s;
+}
+
+.head {
+  font-size: 60px;
+  color: white;
+}
+
+.descrip {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.ex_btns {
+  background: transparent;
+  border: 2px outset white;
+  height: 70px;
+  width: 270px;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  left: 230px;
+  top: 40px;
+  transition: 0.7s;
+}
+
+.ex_btns:hover {
+  font-size: 20px;
+  letter-spacing: 6px;
+  cursor: pointer;
+}
+
+.img1 {
+  height: 400px;
+  width: 600px;
+  position: relative;
+  left: 100px;
+}
+
+.inner_ul {
+  display: block;
+  position: absolute;
+  left: 120px;
+  top: 45px;
+  text-decoration: none;
+  list-style-type: none;
+  visibility: hidden;
+}
+
+.inner_ul li {
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+  background-color: black;
+  font-size: 20px;
+  width: 120px;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+
+.inner_ul li:hover {
+  scale: 1.1;
+}
+
+.outer_li:hover .inner_ul {
+  visibility: visible;
+}
+
+.inner_ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.services {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  transition: 1.1s;
+}
+
+.services p {
+  font-size: 90px;
+  font-weight: lighter;
+  position: relative;
+  left: 230px;
+  width: auto;
+}
+
+.services .outer_box {
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 80%;
+  position: relative;
+  left: 200px;
+  top: -70px;
+}
+
+.services .outer_box .box {
+  height: 200px;
+  border-top: 2px solid black;
+  width: 350px;
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services .outer_box h2 {
+  position: relative;
+  font-size: 30px;
+  margin-left: 2px;
+}
+
+.services .box p {
+  font-size: 19px;
+  position: relative;
+  left: 0px;
+  top: -40px;
+  margin-left: 2px;
+  height: fit-content;
+  color: rgb(81, 81, 81);
+}
+
+.features {
+  position: absolute;
+  top: 350px;
+  left: -200px;
+  height: 700px;
+  width: 125%;
+  background-color: rgb(18, 18, 18);
+  transition: 1.1s;
+}
+
+.features .head {
+  position: absolute;
+  top: -20px;
+  left: 400px;
+  color: white;
+  border: 5px outset whitesmoke;
+  font-size: 80px;
+  width: 700px;
+  height: fit-content;
+  text-align: center;
+  background: transparent;
+}
+
+.features .head-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features .area {
+  position: relative;
+  height: 450px;
+  top: 200px;
+  /* border-top: 1px solid white; */
+  width: 550px;
+  text-align: center;
+}
+
+.features .area.a1 {
+  border-right: 1px solid white;
+  text-align: center;
+  position: absolute;
+  left: 170px;
+  top: 200px;
+  width: 40%;
+  height: 400px;
+}
+
+.features .area.a2 {
+  text-align: center;
+  position: absolute;
+  left: 840px;
+  top: 200px;
+  width: 40%;
+}
+
+.features .area h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 65px;
+  text-decoration: underline;
+}
+
+.features .area .heading1 {
+  text-align: center;
+}
+.features .area .heading2 {
+  text-align: center;
+}
+
+.features .area p {
+  font-size: 19px;
+  color: white;
+  margin-left: 0;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 450px;
+  text-align: start;
+  margin-top: 0;
+}
+
+.feedback_box {
+  height: 500px;
+  position: absolute;
+  top: 1050px;
+  display: flex;
+}
+
+.feedback_box .box1 {
+  background-color: white;
+  position: relative;
+  width: 780px;
+  left: -20px;
+}
+
+.feedback_box .box1 h1 {
+  font-size: 100px;
+  position: absolute;
+  z-index: 2;
+  left: 320px;
+  top: 20px;
+  color: rgb(30, 30, 30);
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.feedback_box .box2 {
+  background-color: cadetblue;
+  position: relative;
+  width: 1015px;
+  right: 190px;
+}
+
+.feedback_box .box2 p {
+  font-size: 30px;
+  position: relative;
+  top: 100px;
+}
+
+.feedback_box .box2 button {
+  position: relative;
+  top: 100px;
+  left: 230px;
+  letter-spacing: 10px;
+  width: 400px;
+  height: 50px;
+  font-size: 18px;
+  background: transparent;
+  border: 2px solid white;
+  transition: 0.7s;
+}
+
+.feedback_box .box2 button:hover {
+  font-size: 16px;
+}
+
+footer {
+  background-color: black;
+  position: absolute;
+  top: 1550px;
+  width: 133.3%;
+  left: -300px;
+  height: 450px;
+  color: white;
+}
+
+footer h1 {
+  position: relative;
+  left: 700px;
+  font-size: 50px;
+}
+
+footer .cmp {
+  background-color: whitesmoke;
+  color: black;
+}
+
+footer .cmp h1 {
+  position: relative;
+  left: 150px;
+  letter-spacing: 6px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content .box1 {
+  position: relative;
+  top: 30px;
+}
+
+footer .content p {
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+footer .content .grey {
+  color: grey;
+}
+
+footer .content .box2 {
+  position: relative;
+  left: -220px;
+  top: 90px;
+}
+
+footer .box2 p {
+  position: relative;
+  left: 0px;
+  top: -60px;
+  letter-spacing: 9px;
+  font-size: 20px;
+  margin-left: 0;
+}
+
+footer .box2 .grey {
+  letter-spacing: 5px;
+  font-size: 16px;
+}
+
+footer .box2 .mail {
+  color: grey;
+  position: relative;
+  top: -65px;
+}
+
+footer .social {
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .social img {
+  margin: 10px;
+}
+
+footer .social img:hover {
+  cursor: pointer;
+  opacity: 0.1;
+}
+
+
+@media (max-width: 1300px) {
+  body {
+    width: auto;
+  }
+  .logo {
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .pipe {
+    left: 340px;
+    top: 0;
+    font-size: 24px;
+  }
+
+  ul {
+    left: 0;
+    top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .li {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+
+  a i{
+    position: relative;
+    margin-top: 20px;
+    width: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: 2px;
+  }
+
+  .register {
+    left: 70px;
+  }
+
+  .login {
+    right: 30px;
+  }
+
+  .box {
+    left: 50px;
+    top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    text-align: center;
+    left: 0px;
+    margin-left: 0;
+  }
+
+  .head {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .descrip {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .ex_btns {
+    width: 230px;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+
+  .services {
+    text-align: center;
+  }
+
+  .services p {
+    font-size: 60px;
+    text-align: center;
+    left: 0;
+  }
+
+  .services .outer_box {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    left: 0;
+  }
+
+  .services .outer_box .box {
+    width: 30%;
+    margin: 20px auto;
+  }
+
+  .features {
+    width: 100%;
+    left: 0;
+  }
+
+  .features .head {
+    left: 350px;
+    margin-left: 0;
+    width: 50%;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .features .heading1 {
+    left: 0px;
+  }
+
+  .features .heading2 {
+    left: 0px;
+  }
+
+  .features .area {
+    width: 100%;
+    /* margin: 20px auto; */
+  }
+
+  .features .area.a1 {
+    position: relative;
+    left: 140px;
+    top: 150px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .features .area.a2 {
+    position: relative;
+    left: 140px;
+    top: 150px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .features .area p {
+    /* left: 30px;  */
+    text-align: start;
+    width: 350px;
+  }
+
+  .feedback_box {
+    flex-wrap: wrap;
+    height: 110%;
+    width: 100%;
+  }
+
+  .feedback_box .box1 {
+    width: 30%;
+    left: 0;
+  }
+
+  .feedback_box .box2 {
+    width: 70%;
+    right: 0px;
+  }
+
+  .feedback_box .box1 h1 {
+    font-size: 80px;
+    left: 100px;
+  }
+  .feedback_box .box2 p {
+    font-size: 25px;
+    left: 50px;
+  }
+  .feedback_box .box2 button {
+    left: 50px;
+  }
+
+  footer {
+    height: 130%;
+    width: 100%;
+    left: 0;
+    top: 1490px;
+    display: block;
+  }
+
+  footer h1 {
+    text-align: center;
+    left: 0;
+    margin-bottom: 0;
+  }
+
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .content .box1 {
+    margin-top: 5px;
+    left: 0;
+    margin-bottom: 5px;
+  }
+  footer .content .box2 {
+    margin-top: 5px;
+    left: 0;
+  }
+
+  footer .cmp h1 {
+    text-align: center;
+    left: -300px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .logo {
+    font-size: 25px;
+    left: 25px;
+  }
+
+  .pipe {
+    display: none;
+  }
+
+  ul {
+    top: 18px;
+    left: 110px;
+    margin-left: 0;
+    gap: 19px;
+  }
+  .li {
+    height: fit-content;
+    margin-right: 10px;
+  }
+  .a {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 12px;
+    position: absolute;
+    top: 100px;
+    width: 150px;
+  }
+  a i{
+    position: relative;
+    right: 500px;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
+  .main {
+    text-align: center;
+  }
+  .head {
+    font-size: 50px;
+    position: relative;
+    left: -30px;
+    top: 50px;
+  }
+
+  .descrip {
+    position: relative;
+    left: -30px;
+    font-size: 16px;
+    top: 50px;
+  }
+
+  .ex_btns {
+    position: relative;
+    left: -30px;
+    width: 200px;
+    height: 60px;
+    top: 80px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .services p {
+    font-size: 50px;
+  }
+
+  .services .box p {
+    font-size: 18px;
+  }
+  .services .outer_box {
+    flex-wrap: wrap;
+  }
+  .services .outer_box .box {
+    width: 30%;
+  }
+
+  .features .head {
+    font-size: 50px;
+    left: 290px;
+  }
+
+  .features .area.a1 {
+    text-align: center;
+    left: 80px;
+    top: 105px;
+    padding-right: 60px;
+    height: 350px;
+    width: 350px;
+    border: none;
+  }
+  .features .area.a2 {
+    text-align: center;
+    left: 80px;
+    top: 100px;
+    padding-right: 60px;
+    height: 350px;
+  }
+  .features .area .heading1 {
+    left: 70px;
+    font-size: 28px;
+  }
+  .features .area .heading2 {
+    left: 70px;
+  }
+  .features .area h2 {
+    font-size: 30px;
+  }
+
+  .features .area p {
+    font-size: 16px;
+  }
+
+  .feedback_box {
+    top: 900px;
+  }
+
+  .feedback_box .box1 h1 {
+    font-size: 70px;
+    left: 70px;
+  }
+
+  .feedback_box .box2 p {
+    font-size: 22px;
+    left: 20px;
+  }
+  .feedback_box .box2 button {
+    /* font-size: 22px; */
+    width: 300px;
+    font-size: 16px;
+    letter-spacing: 6px;
+    left: 0;
+  }
+
+  footer {
+    top: 1340px;
+  }
+  footer h1 {
+    font-size: 40px;
+  }
+
+  footer .content p {
+    font-size: 16px;
+  }
+
+  footer .box2 p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 25px;
+    left: 25px;
+  }
+
+  .pipe {
+    display: none;
+  }
+
+  ul {
+    top: 18px;
+    left: 110px;
+    margin-left: 0;
+    gap: 19px;
+  }
+  .li {
+    height: fit-content;
+    margin-right: 10px;
+  }
+  .a {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 12px;
+    position: absolute;
+    top: 100px;
+    width: 150px;
+  }
+  a i{
+    margin-left: 10px;
+  }
+  .main {
+    text-align: center;
+  }
+  .head {
+    font-size: 50px;
+    position: relative;
+    left: -30px;
+    top: 50px;
+  }
+
+  .descrip {
+    position: relative;
+    left: -30px;
+    font-size: 16px;
+    top: 50px;
+  }
+
+  .ex_btns {
+    position: relative;
+    left: -30px;
+    width: 200px;
+    height: 60px;
+    top: 80px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .services p {
+    font-size: 50px;
+  }
+
+  .services .box p {
+    font-size: 18px;
+  }
+  .services .outer_box {
+    flex-wrap: wrap;
+  }
+  .services .outer_box .box {
+    width: 30%;
+  }
+
+  .features .head {
+    font-size: 50px;
+    left: 270px;
+  }
+
+  .features .area.a1 {
+    text-align: center;
+    left: 70px;
+    top: 100px;
+    padding-right: 60px;
+    height: 350px;
+    width: 350px;
+    border: none;
+  }
+  .features .area.a2 {
+    text-align: center;
+    left: 50px;
+    top: 100px;
+    padding-right: 60px;
+    height: 350px;
+  }
+  .features .heading1 {
+    position: absolute;
+    left: 80px;
+  }
+  .features .heading2 {
+    position: absolute;
+    left: 250px;
+  }
+  .features .area h2 {
+    font-size: 24px;
+  }
+
+  .features .area p {
+    font-size: 16px;
+  }
+
+  .feedback_box {
+    top: 900px;
+  }
+
+  .feedback_box .box1 h1 {
+    font-size: 70px;
+    left: 70px;
+  }
+
+  .feedback_box .box2 p {
+    font-size: 22px;
+    left: 20px;
+  }
+  .feedback_box .box2 button {
+    /* font-size: 22px; */
+    width: 300px;
+    font-size: 16px;
+    letter-spacing: 6px;
+    left: 0;
+  }
+
+  footer {
+    top: 1340px;
+  }
+  footer h1 {
+    font-size: 40px;
+  }
+
+  footer .content p {
+    font-size: 16px;
+  }
+
+  footer .box2 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 930px) {
+  .logo {
+    font-size: 25px;
+    left: 0px;
+  }
+
+  .pipe {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  ul {
+    top: 18px;
+    left: 0px;
+    margin-left: 0;
+    gap: 19px;
+  }
+  .li {
+    height: fit-content;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .a {
+    font-size: 14px;
+  }
+
+  a i{
+    position: relative;
+    left : 180px;
+  }
+  .main {
+    text-align: center;
+  }
+  .head {
+    font-size: 50px;
+    position: relative;
+    left: -30px;
+    top: 50px;
+  }
+
+  .descrip {
+    position: relative;
+    left: -30px;
+    font-size: 16px;
+    top: 50px;
+  }
+
+  .ex_btns {
+    position: relative;
+    left: -30px;
+    width: 200px;
+    height: 60px;
+    top: 80px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .services p {
+    font-size: 50px;
+  }
+
+  .services .box p {
+    font-size: 18px;
+  }
+  .services .outer_box {
+    flex-wrap: wrap;
+  }
+  .services .outer_box .box {
+    width: 30%;
+  }
+
+  .features .head {
+    font-size: 50px;
+    left: 200px;
+  }
+
+  .features .area.a1 {
+    text-align: center;
+    left: 0px;
+    top: 100px;
+    padding-right: 60px;
+    height: 350px;
+    width: 350px;
+    border: none;
+  }
+  .features .area.a2 {
+    text-align: center;
+    left: 0px;
+    top: 100px;
+    padding-right: 60px;
+    height: 350px;
+  }
+  .features .area .heading1 {
+    position: absolute;
+    left: 80px;
+    font-size: 24px;
+  }
+  .features .area .heading2 {
+    position: absolute;
+    left: 80px;
+    font-size: 24px;
+  }
+
+  .features .area p {
+    font-size: 14px;
+  }
+
+  .feedback_box {
+    top: 900px;
+  }
+
+  .feedback_box .box1 h1 {
+    font-size: 60px;
+    left: 60px;
+    top: -70px;
+  }
+
+  .feedback_box .box2 p {
+    font-size: 22px;
+    left: 20px;
+  }
+  .feedback_box .box2 button {
+    /* font-size: 22px; */
+    width: 300px;
+    font-size: 16px;
+    letter-spacing: 6px;
+    left: 0;
+  }
+
+  footer {
+    top: 1340px;
+  }
+  footer .cmp h1 {
+    font-size: 40px;
+    left: 00px;
+  }
+
+  footer .content p {
+    font-size: 16px;
+  }
+
+  footer .box2 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .li {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+  
+
+  .head {
+    font-size: 40px;
+  }
+
+  .main_box {
+    height: 700px;
+  }
+  .descrip {
+    font-size: 16px;
+  }
+
+  .ex_btns {
+    width: 200px;
+    height: 60px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    height: 600px;
+    background-color: white;
+  }
+  .services p {
+    margin-top: 10px;
+    top: 0;
+    font-size: 50px;
+  }
+
+  .services .outer_box .box {
+    width: 45%;
+  }
+  .features {
+    top: 500px;
+    height: 850px;
+  }
+  .features .head {
+    margin-top: 70px;
+    font-size: 45px;
+    left: 60px;
+  }
+
+  .features .area.a1{
+    padding-left: 50px;
+    left: 80px;
+    border-bottom: 1px solid white;
+  }
+  .features .area.a2{
+    padding-left: 50px;
+    left: 80px;
+  }
+  .features .area h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features .area p {
+    font-size: 16px;
+  }
+
+  .feedback_box {
+    top: 1350px;
+  }
+
+  .feedback_box .box1{
+    width: 25%;
+  }
+  .feedback_box .box2{
+    width: 75%;
+  }
+  .feedback_box .box1 h1 {
+    font-size: 50px;
+    left: 0;
+  }
+
+  .feedback_box .box2 p {
+    font-size: 18px;
+    top: 140px;
+    left: 0;
+  }
+  .feedback_box .box2 button{
+    top: 150px;
+  }
+
+  footer {
+    top: 1790px;
+  }
+  footer h1 {
+    font-size: 40px;
+  }
+
+  footer .content p {
+    font-size: 16px;
+  }
+
+  footer .box2 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .li {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+  a i{
+    position: relative;
+    left : 50px;
+  }
+
+  .head {
+    font-size: 30px;
+  }
+
+  .main_box {
+    height: 700px;
+    text-align: center;
+  }
+  .descrip {
+    font-size: 14px;
+  }
+
+  .ex_btns {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    height: 600px;
+    background-color: white;
+  }
+  .services p {
+    margin-top: 10px;
+    top: 0;
+    font-size: 40px;
+  }
+
+  .services .outer_box .box {
+    width: 45%;
+  }
+  .outer_box .box p{
+    font-size: 15px;
+  }
+  .features {
+    top: 500px;
+    height: 850px;
+  }
+  .features .head {
+    margin-top: 70px;
+    font-size: 35px;
+    left: 30px;
+  }
+
+  .features .area.a1{
+    padding-left: 50px;
+    left: 0px;
+    border-bottom: 1px solid white;
+  }
+  .features .area.a2{
+    padding-left: 50px;
+    left: 0px;
+  }
+  .features .area h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features .area p {
+    font-size: 15px;
+  }
+
+  .feedback_box {
+    top: 1350px;
+  }
+
+  .feedback_box .box1{
+    width: 25%;
+  }
+  .feedback_box .box2{
+    width: 75%;
+  }
+  .feedback_box .box1 h1 {
+    font-size: 50px;
+    left: 0;
+  }
+
+  .feedback_box .box2 p {
+    font-size: 15px;
+    top: 140px;
+    left: 0;
+  }
+  .feedback_box .box2 button{
+    top: 150px;
+    font-size: 15px;
+  }
+
+  footer {
+    top: 1790px;
+  }
+  footer h1 {
+    font-size: 40px;
+  }
+
+  footer .content p {
+    font-size: 14px;
+  }
+
+  footer .box2 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .li {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  
+
+  .head {
+    font-size: 30px;
+  }
+
+  .main_box {
+    height: 700px;
+    left: 0;
+  }
+  .descrip {
+    font-size: 14px;
+  }
+
+  .ex_btns {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    height: 600px;
+    background-color: white;
+  }
+  .services p {
+    margin-top: 10px;
+    top: 0;
+    font-size: 40px;
+  }
+
+  .services .outer_box .box {
+    width: 45%;
+  }
+  .outer_box .box p{
+    font-size: 15px;
+  }
+  .features {
+    top: 500px;
+    height: 850px;
+  }
+  .features .head {
+    margin-top: 70px;
+    font-size: 35px;
+    left: 30px;
+  }
+
+  .features .area.a1{
+    padding-left: 50px;
+    left: 0px;
+    border-bottom: 1px solid white;
+  }
+  .features .area.a2{
+    padding-left: 50px;
+    left: 0px;
+  }
+  .features .area h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features .area p {
+    font-size: 15px;
+  }
+
+  .feedback_box {
+    top: 1350px;
+  }
+
+  .feedback_box .box1{
+    width: 25%;
+  }
+  .feedback_box .box2{
+    width: 75%;
+  }
+  .feedback_box .box1 h1 {
+    font-size: 50px;
+    left: 0;
+  }
+
+  .feedback_box .box2 p {
+    font-size: 15px;
+    top: 140px;
+    left: 0;
+  }
+  .feedback_box .box2 button{
+    top: 150px;
+    font-size: 15px;
+  }
+
+  footer {
+    top: 1790px;
+  }
+  footer h1 {
+    font-size: 40px;
+  }
+
+  footer .content p {
+    font-size: 14px;
+  }
+
+  footer .box2 p {
+    font-size: 14px;
+  }
+}

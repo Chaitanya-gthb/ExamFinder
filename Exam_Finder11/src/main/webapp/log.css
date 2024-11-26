@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.log{
+    position: relative;
+    left: 100px;
+    top: 10px;
+    object-fit: cover;
+    height: 600px;
+    width: 500px;
+}
+
+i{
+    font-size: 30px;
+    position: absolute;
+    right: 180px;
+    top: 70px;
+    color: rgb(72, 72, 237);
+}
+
+.content{
+    display: flex;
+    box-shadow: 0 0 10px black;
+    width: 80%;
+    height: 650px;
+}
+
+.login-container {
+    position: relative;
+    top: 120px;
+    left: 200px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login-container p{
+    color: grey;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 24px;
+}
+
+.login-container input {
+    width: 350px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    color: rgb(72, 72, 237);
+}
+
+.login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(72, 72, 237);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    height: 45px;
+    width: 370px;
+    font-size: 20px;
+}
+
+.login-container button:hover {
+    background: #555;
+}
+
+.login-container.block{
+    display :none
+}
+
+.forgotBlock{
+    position: absolute;
+    right: 300px;
+    top: 140px;
+    display: none;
+}
+.forgotBlock.visible{
+    display: block;
+}
+
+.forgotBlock input{
+    width: 350px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    color: rgb(72, 72, 237);
+}
+
+.forgotBlock button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(72, 72, 237);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    height: 45px;
+    width: 370px;
+    font-size: 20px;
+}
+
+.forgotBlock button:hover{
+    background-color: #555;
+}
+
+.forgotBlock h1{
+    font-size: 24px;
+}
+
+.forgotBlock p{
+    color: grey;
+    margin-bottom: -10px;
+    position: relative;
+    left: 2px;
+}

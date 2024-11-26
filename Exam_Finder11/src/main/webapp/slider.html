@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Slider</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .testimonial-container {
+        display: flex;
+        overflow-x: auto;
+        width: 80%;
+      }
+
+      .testimonial {
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        flex: 0 0 auto;
+      }
+
+      .testimonial img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+      }
+
+      .testimonial h3 {
+        position: relative;
+        top: 8px;
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-left: 15px;
+      }
+
+      .testimonial p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-left: 15px;
+      }
+
+      .testimonial .position p{
+        font-size: 10px;
+        margin-top: 10px;
+        color: #888;
+      }
+      .profile{
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <div class="profile">
+          <div class="imgg">
+            <img src="main.img" alt="Asmita Singh" />
+          </div>
+          <div class="descrip">
+            <h3>Asmita Singh</h3>
+            <div class="position">
+                <p>
+              Assistant Manager, MARCOM<br />Arth Impact Digital Loans
+            </p>
+            </div>
+          </div>
+        </div>
+        <p>
+          Dreamfoot did an impressive job. The team was very empathetic &
+          creative while stitching our customer stories. It helped us inspire
+          our deep customer-connect, impact & technology linkages to our
+          ecosystem. We definitely will work with them for more such projects.
+        </p>
+      </div>
+      <div class="testimonial">
+        <div class="profile">
+          <div class="imgg">
+            <img src="main.img" alt="John Deotrakul" />
+          </div>
+          <div class="descrip">
+            <h3>John Deotrakul</h3>
+            <div class="position">
+                <p>
+              Global Communications Director<br />Planet Water
+            </p>
+            </div>
+          </div>
+        </div>
+        <p>
+          The work of Dreamfoot received positive feedback from stakeholders.
+          They facilitated a smooth workflow with their complete understanding
+          of the project and meticulous planning.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
